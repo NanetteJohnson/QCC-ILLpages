@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>ILLiad - Change User Information</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
+<![endif]-->
+</head>
+<body id="type-b">
+<div id="wrap">
+  <#INCLUDE filename="include_header.html">
+  <div id="content-wrap">
+  	<#INCLUDE filename="include_menu.html">
+    <div id="content">
+		<form action="illiad.dll" method="post" name="ChangeUserInformation" class="f-wrap-request">
+			<input type="hidden" name="ILLiadForm" value="ChangeUserInformation">
+            <input type="hidden" name="ILLiadForm" value="Registration">
+            <input type="hidden" name="NotifyGroup" value="E-Mail" />
+            <input type="hidden" name="DeliveryGroup" value="Hold for Pickup" />
+            <input type="hidden" name="WebDeliveryGroup" value="Yes" />
+            <input type="hidden" name="NVTGC" value="ILL" />
+				<div class="req"><b>*</b> Indicates required field</div>
+				<fieldset>			
+					<h3>Change Personal Information</h3>						
+					<label for="FirstName">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORFirstName">"><b>First Name</b></span>
+						</span>
+						<input id="FirstName" name="FirstName" type="text" size="40" class="f-name" tabindex="2" value="<#PARAM name="FirstName">"><br />	
+					</label>		
+						
+					<label for="LastName">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORLastName">"><b>Last Name</b></span>
+						</span>
+						<input id="LastName" name="LastName" type="text" size="40" class="f-name" tabindex="2" value="<#PARAM name="LastName">"><br />						
+					</label>
+					
+					<label for="SSN">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORSSN">"><b>Lib # (QCC Barcode)</b></span>						</span>
+					    <input id="SSN" name="SSN" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="SSN">"><br />						
+					</label>
+					
+	
+					
+					<label for="EMailAddress">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERROREMailAddress">"><b>QCC E-Mail Address</b>
+</span>
+						</span>
+						<input id="EMailAddress" name="EMailAddress" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="EMailAddress">"><br />						
+					</label>
+					
+					<label for="Phone">
+						<span class="field">
+							<span class="req">*</span>
+							<span class="<#ERROR name="ERRORPhone">"><b>Daytime Phone</b></span>
+						</span>
+						<input id="Phone" name="Phone" type="text" size="40" class="f-name" tabindex="3" value="<#PARAM name="Phone">"><br />						
+					</label>
+					
+				
+				
+				
+					
+					<label for="StatusGroup">
+						<span class="field">
+							<span class="<#ERROR name="ERRORStatus">"><b>Status</b></span>
+						</span>
+						<select id="StatusGroup" name="StatusGroup" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="StatusGroup"></option>
+							<option>Graduate</option>
+							<option>Faculty</option>
+							<option>Staff</option>
+							<option>Undergraduate</option>
+							<option>Distance Ed Grad</option>
+						</select><br />
+					</label>
+					
+					<label for="Department">
+						<span class="field">
+							<span class="<#ERROR name="ERRORDepartment">"><b>Department</b></span>
+						</span>
+						<select id="Department" name="Department" size="1" class="f-name" tabindex="4">
+							<option selected><#PARAM name="Department"></option>
+							<option>Art and Design</option>
+<option>Basic Education Skills</option>
+<option>Biological Sciences and Geology</option>
+<option>Business</option>
+<option>Chemistry</option>
+<option>Electrical and Computer Engineering Technology</option>
+<option>English</option>
+<option>Foreign Languages and Literatures</option>
+<option>Health, Physical Education and Dance</option>
+<option>History</option>
+<option>Mathematics and Computer Science</option>
+<option>Mechanical Engineering Technology and Design Drafting</option>
+<option>Music</option>
+<option>Nursing</option>
+<option>Physics</option>
+<option>Social Sciences</option>
+<option>Speech Communication and Theatre Arts</option>
+<option>Interdisciplinary</option>
+<option>Other</option>
+
+						</select><br />
+					</label>
+					
+					
+					
+					
+										               
+                    <div class="f-submit-wrap" align="right">
+						<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="60" />
+						<input type="submit" name="SubmitButton" value="Cancel - Exit to Main Menu" class="f-submit" tabindex="62" />
+					</div>
+				</fieldset>
+		</form>		
+      	<#INCLUDE filename="include_footer.html">
+    </div>    
+  </div>
+</div>
+</body>
+</html>
