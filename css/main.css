@@ -31,10 +31,15 @@ Copyright: Atlas Systems, Inc. 2006 http://www.atlas-sys.com
     margin: 4px 0 0 0;
     list-style: none;
     font-size: 12px;
+	color: #FFF;
+	background-color: #4260B6;
+	text-color:#E86B0C;
 }
+
 #menu li {
     display: inline;
 }
+
 #menu a {
     display: block;
     float: right;
@@ -44,19 +49,26 @@ Copyright: Atlas Systems, Inc. 2006 http://www.atlas-sys.com
     font-size: 12px;
     font-weight: bold;
     color: #FFF;
+	background-color: #4260B6;
+	text-color:#E86B0C;
 }
+
 #menu a:hover {
     color: #EEE;
     border-bottom: 1px solid #CCC;
+	text-color:#E86B0C;
 }
 
 #menu .main-nav-tab {
     color: #FFF;
     text-decoration: none;
+	background-color: #4260B6;
+	text-color:#E86B0C;
 }
 
 #menu .main-nav-item {
     display: inline;
+	text-color:#E86B0C;
 }
 
 #menu .main-nav-dd {
@@ -69,6 +81,7 @@ Copyright: Atlas Systems, Inc. 2006 http://www.atlas-sys.com
     background-color: #4260b6;
     border-bottom: 4px solid #000;
     display: none;
+	text-color:#E86B0C;
 }
 
 #menu .main-nav-dd-column {
@@ -79,6 +92,7 @@ Copyright: Atlas Systems, Inc. 2006 http://www.atlas-sys.com
     border-left: 1px solid #ddd;
     float: left;
     *border-left: 0;
+	text-color:#E86B0C;	
 }
 
 #menu .main-nav-dd-column:first-child {
