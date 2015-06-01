@@ -348,12 +348,12 @@ hr {margin: 1em 0;background:#f2f2f2;height:1px;color:#cccccc;border:none;clear:
 .clear {clear:both;position:relative;font-size:0px;height:0px;line-height:0px} 
 
 /* LAYOUT - HEADER */
-#header {background-color: #ffffff; border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC; border-top: 5px solid #010066;border-bottom: 5px solid #010066;margin: 0 0 25px;padding: 6px 0 0 2px;
+#header {background-color: #344f9e; border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC; border-top: 5px solid #010066;border-bottom: 5px solid #010066;margin: 0 0 25px;padding: 6px 0 0 2px;
 background-image:url(images/background.gif);
 background-position:bottom;
-background-repeat:repeat-x;}/* Nylink - changed background color from #efefef to white (#ffffff), added background image, changed top & bottom borders from ILLiad blue #000066 to QCC blue #010066 */
+background-repeat:repeat-x;}/* Nylink - changed background color from #efefef to white (#ffffff), added background image, changed top & bottom borders from ILLiad blue #000066 to QCC blue #010066 *//* changed background-color from #ffffff to #344f9e  */
 #header #site-name {font: 265% Arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:#010066;border:none} /* Nylink - changed from ILLiad blue #000066 to QCC blue #010066 */
-#header .welcome {font: 265% "Trebuchet MS",Arial, Helvetica, sans-serif;margin:0px 0 0 40px;padding:3px;color:#010066;border:none;} /* Nylink - created in order to line up text under image */
+#header .welcome {font: 265% "Trebuchet MS",Arial, Helvetica, sans-serif;margin:0px 0 0 40px;padding:3px;color:#010066;border: 5px solid #010066;} /* Nylink - created in order to line up text under image *//* added border-bottom: 5px solid #010066  */ 
 #header #title-name {font: 265% arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:#010066;border:none} /* Nylink - changed from ILLiad blue #000066 to QCC blue #010066 */
 #header #user-name {font: 100% ariel;margin:0px 0 0 0;padding:3px;color:#333333;border:none}
 	
